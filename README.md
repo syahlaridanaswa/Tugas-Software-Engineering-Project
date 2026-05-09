@@ -1,0 +1,5 @@
+- Menambahkan analisis kebutuhan sistem absensi mahasiswa berbasis GPS
+- Menambahkan analisis permasalahan absensi manual
+- Menambahkan kebutuhan fungsional dan nonfungsional sistem
+- Menambahkan analisis validasi lokasi menggunakan geofencing
+- Memperbaiki alur proses absensi mahasiswa
