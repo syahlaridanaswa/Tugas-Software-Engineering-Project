@@ -1,1 +1,43 @@
+A. Analisis
 
+1. Analisis Permasalahan
+Sistem absensi konvensional masih memiliki berbagai kendala seperti titip absen, antrean panjang saat absensi, serta proses rekapitulasi data yang memakan waktu. Selain itu, validasi kehadiran mahasiswa belum dapat dipastikan secara akurat karena tidak adanya verifikasi lokasi secara langsung.
+2. Analisis Kebutuhan Pengguna
+Sistem dirancang untuk memenuhi kebutuhan tiga jenis pengguna utama yaitu mahasiswa, dosen, dan admin. Mahasiswa membutuhkan sistem absensi yang mudah dan cepat, dosen membutuhkan monitoring kehadiran secara real-time, sedangkan admin membutuhkan pengelolaan data akademik yang terpusat.
+3. Analisis Kebutuhan Fungsional
+Sistem memiliki beberapa fungsi utama seperti login pengguna, validasi lokasi menggunakan GPS, validasi waktu sesuai jadwal kuliah, penyimpanan data absensi otomatis, serta dashboard monitoring bagi dosen dan admin.
+4. Analisis Kebutuhan Nonfungsional
+Sistem harus memiliki keamanan data yang baik, tampilan yang responsif, performa yang stabil, serta mampu berjalan di perangkat mobile dan web secara optimal.
+5. Analisis Teknologi
+Teknologi GPS dan Geofencing digunakan untuk memastikan mahasiswa melakukan absensi di area kampus yang telah ditentukan. Sistem juga memanfaatkan database terpusat agar data absensi tersimpan secara otomatis dan dapat diakses secara real-time.
+6. Analisis Proses Sistem
+Alur sistem dimulai dari login pengguna, pengambilan koordinat GPS, validasi lokasi dan waktu, penyimpanan data absensi, hingga menampilkan notifikasi berhasil atau gagal kepada pengguna.
+
+
+B. Design
+1. Perancangan Arsitektur Sistem
+Sistem dirancang menggunakan konsep client-server, di mana aplikasi mobile digunakan oleh mahasiswa untuk absensi dan dashboard web digunakan oleh dosen serta admin untuk monitoring dan pengelolaan data.
+2. Perancangan UML
+Perancangan sistem menggunakan UML seperti Use Case Diagram, Activity Diagram, dan Sequence Diagram untuk menggambarkan interaksi pengguna, alur aktivitas, dan proses validasi sistem.
+3. Perancangan Antarmuka UI
+Antarmuka dirancang menggunakan konsep User-Centered Design dengan tampilan sederhana, modern, dan mudah digunakan agar pengguna dapat mengoperasikan aplikasi dengan nyaman.
+4. Perancangan Validasi GPS
+Sistem dirancang menggunakan metode geofencing dengan radius tertentu di area kampus. Mahasiswa hanya dapat melakukan absensi jika berada di dalam area yang telah ditentukan.
+5. Perancangan Database
+Database dirancang untuk menyimpan data mahasiswa, dosen, mata kuliah, jadwal perkuliahan, serta data absensi secara terstruktur dan terintegrasi.
+6. Perancangan Dashboard Monitoring
+Dashboard dosen dan admin dirancang untuk menampilkan data kehadiran mahasiswa secara real-time serta menyediakan fitur pengelolaan data akademik.
+
+c. Implementasi
+1. Implementasi Login dan Autentikasi
+Sistem mengimplementasikan fitur login untuk mahasiswa, dosen, dan admin menggunakan akun yang telah terdaftar di database agar keamanan akses sistem tetap terjaga.
+2. Implementasi GPS dan Geofencing
+Sistem mengintegrasikan GPS API untuk mengambil koordinat lokasi pengguna secara real-time dan melakukan validasi lokasi berdasarkan radius kampus yang telah ditentukan.
+3. Implementasi Validasi Waktu
+Sistem menerapkan validasi waktu sesuai jadwal perkuliahan sehingga mahasiswa hanya dapat melakukan absensi pada jam yang telah ditetapkan.
+4. Implementasi Penyimpanan Data Otomatis
+Data absensi yang berhasil divalidasi akan langsung disimpan ke database pusat secara otomatis untuk menjaga integritas dan keakuratan data.
+5. Implementasi Dashboard Dosen dan Admin
+Dashboard dosen digunakan untuk melihat dan memvalidasi data kehadiran mahasiswa, sedangkan dashboard admin digunakan untuk mengelola data mahasiswa, mata kuliah, dan jadwal perkuliahan.
+6. Implementasi Testing dan Debugging
+Setelah seluruh fitur selesai dikembangkan, dilakukan pengujian sistem dan perbaikan bug untuk memastikan aplikasi berjalan stabil, akurat, dan siap digunakan.
